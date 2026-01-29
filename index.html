@@ -2,62 +2,66 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Passeio a Cavalo</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- LOGO MAIOR FIXA NO TOPO -->
-  <div class="logo-top">
-    <img src="logo.png" alt="Logo">
-  </div>
+  <!-- LOGO FIXA NO TOPO -->
+  <img src="logo.png" alt="Logo" class="logo-fixed">
 
-  <!-- BANNER -->
-  <header class="hero">
-    <img src="banner.jpg" alt="Banner" class="banner-img">
-  </header>
-
-  <!-- FORMUL¡RIO SOBRE O BANNER, ABAIXO DOS CAVALOS -->
-  <section class="form-section">
-    <h2>FaÁa seu cadastro</h2>
-    <form id="formulario">
-      <input type="text" id="nome" placeholder="Seu nome" required>
-      <input type="email" id="email" placeholder="Seu e-mail" required>
-      <input type="tel" id="telefone" placeholder="Seu telefone">
-      <textarea id="mensagem" placeholder="Mensagem"></textarea>
-      <button type="submit">Enviar pelo WhatsApp</button>
-    </form>
-  </section>
-
-  <!-- ¡REA DE VÕDEO -->
-  <section class="video-section">
-    <h2>VÌdeo do passeio</h2>
-    <video controls poster="banner.jpg">
-      <source src="passeio.mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!-- ¡REA DE FOTOS -->
-  <section class="photos-section">
-    <h2>Galeria de Fotos</h2>
-    <div class="photos-grid">
-      <img src="slide1.jpg" alt="Foto 1">
-      <img src="slide2.jpg" alt="Foto 2">
-      <img src="slide3.jpg" alt="Foto 3">
-    </div>
-  </section>
-
-  <!-- BOT√O FLUTUANTE DO WHATSAPP -->
+  <!-- BOT√ÉO WHATSAPP FLUTUANTE -->
   <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
+  <!-- BANNER -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <!-- FORMUL√ÅRIO SOBRE O BANNER -->
+    <div class="form-container">
+      <h2>Fa√ßa seu cadastro</h2>
+
+      <form id="formulario">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <input type="tel" id="telefone" placeholder="Seu telefone">
+        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- V√çDEO -->
+  <section class="video-section">
+    <h2>V√≠deo do passeio</h2>
+    <video controls poster="banner.jpg">
+      <source src="passeio.mp4" type="video/mp4">
+      Seu navegador n√£o suporta v√≠deo.
+    </video>
+  </section>
+
+  <!-- CARROSSEL DE FOTOS -->
+  <section class="gallery-section">
+    <h2>Fotos do passeio</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+      <div class="carousel-track">
+        <img src="banner.jpg" alt="Foto 1">
+        <img src="banner.jpg" alt="Foto 2">
+        <img src="banner.jpg" alt="Foto 3">
+        <img src="banner.jpg" alt="Foto 4">
+      </div>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2026 Passeio a Cavalo</p>
+    <p>&copy; 2026 ‚Äì Passeio a Cavalo</p>
   </footer>
 
   <script src="script.js"></script>
