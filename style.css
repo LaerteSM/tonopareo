@@ -1,0 +1,80 @@
+:root {
+  --solar: #f39c12;
+  --whatsapp: #25d366; 
+  --dark: #080808;
+  --card-bg: rgba(0,0,0,0.5);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background-color: var(--dark); color: white; overflow-x: hidden; }
+
+/* --- LOGO MAIOR NO TOPO --- */
+.logo-top {
+  position: fixed; top: 10px; left: 50%; transform: translateX(-50%);
+  z-index: 1000;
+}
+.logo-top img { width: 220px; max-width: 45%; }
+
+/* --- BANNER --- */
+.hero {
+  width: 100%; text-align: center; margin-top: 0; position: relative;
+}
+.banner-img {
+  max-width: 90%; height: auto; border-radius: 15px;
+  display: block; margin: 0 auto;
+}
+
+/* --- FORMULÁRIO SOB O BANNER, ABAIXO DOS CAVALOS --- */
+.form-section {
+  width: 90%; max-width: 90%; /* mesma largura do banner */
+  margin: -130px auto 40px; /* sobe o formulário sobre o banner, logo abaixo dos cavalos */
+  background: rgba(0,0,0,0.5); padding: 25px; border-radius: 20px;
+  backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);
+  color: white; z-index: 900; position: relative;
+}
+.form-section h2 { text-align: center; margin-bottom: 20px; font-size: 1.2rem; }
+.form-section input,
+.form-section textarea,
+.form-section select {
+  width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 12px;
+  border: 1px solid #333; background: rgba(0,0,0,0.6); color: white;
+  font-size: 1rem; outline: none;
+}
+.form-section button {
+  width: 100%; padding: 14px; background: var(--solar);
+  color: #000; font-weight: 800; border: none; border-radius: 12px;
+  cursor: pointer; font-size: 1rem;
+  transition: 0.3s;
+}
+.form-section button:hover { transform: scale(1.05); }
+
+/* --- ÁREA DE VÍDEO --- */
+.video-section { max-width: 800px; margin: 40px auto; text-align: center; }
+.video-section h2 { color: var(--solar); margin-bottom: 15px; }
+.video-section video { width: 100%; border-radius: 15px; }
+
+/* --- ÁREA DE FOTOS --- */
+.photos-section { max-width: 900px; margin: 40px auto; text-align: center; }
+.photos-section h2 { color: var(--solar); margin-bottom: 20px; }
+.photos-grid { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.photos-grid img { width: 280px; border-radius: 12px; object-fit: cover; }
+
+/* --- BOTÃO FLUTUANTE WHATSAPP --- */
+.whatsapp-float {
+  position: fixed; bottom: 20px; right: 20px; background: var(--whatsapp);
+  color: white; border-radius: 50%; width: 50px; height: 50px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- FOOTER --- */
+footer { text-align: center; padding: 20px; font-size: 0.8rem; color: #aaa; }
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .logo-top img { width: 160px; }
+  .form-section { margin: -100px 20px 30px; }
+  .photos-grid img { width: 90%; max-width: 250px; }
+  .video-section video { width: 100%; }
+}

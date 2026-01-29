@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passeio a Cavalo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGO MAIOR FIXA NO TOPO -->
+  <div class="logo-top">
+    <img src="logo.png" alt="Logo">
+  </div>
+
+  <!-- BANNER -->
+  <header class="hero">
+    <img src="banner.jpg" alt="Banner" class="banner-img">
+  </header>
+
+  <!-- FORMULÁRIO SOBRE O BANNER, ABAIXO DOS CAVALOS -->
+  <section class="form-section">
+    <h2>Faça seu cadastro</h2>
+    <form id="formulario">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input type="tel" id="telefone" placeholder="Seu telefone">
+      <textarea id="mensagem" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- ÁREA DE VÍDEO -->
+  <section class="video-section">
+    <h2>Vídeo do passeio</h2>
+    <video controls poster="banner.jpg">
+      <source src="passeio.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- ÁREA DE FOTOS -->
+  <section class="photos-section">
+    <h2>Galeria de Fotos</h2>
+    <div class="photos-grid">
+      <img src="slide1.jpg" alt="Foto 1">
+      <img src="slide2.jpg" alt="Foto 2">
+      <img src="slide3.jpg" alt="Foto 3">
+    </div>
+  </section>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2026 Passeio a Cavalo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
