@@ -34,10 +34,3 @@ if (nextBtn && prevBtn) {
     updateCarousel();
   });
 
-  prevBtn.addEventListener("click", () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-
-  window.addEventListener("resize", updateCarousel);
-}
