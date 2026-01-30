@@ -1,16 +1,214 @@
-document.getElementById("formulario").addEventListener("submit", function(e) {
-  e.preventDefault();
+:root {
+  --gold: #f5b041;
+  --dark: #0b0b0b;
+  --gray: #2a2a2a;
+  --whatsapp: #25d366;
+}
 
-  const nome = document.getElementById("nome").value;
-  const email = document.getElementById("email").value;
-  const telefone = document.getElementById("telefone").value;
-  const mensagem = document.getElementById("mensagem").value;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  const numeroWhatsApp = "5511999999999"; // TROQUE PELO SEU NÚMERO
+body {
+  background: var(--dark);
+  color: white;
+  overflow-x: hidden;
+}
 
-  const texto = `Olá! Gostaria de informações sobre o passeio a cavalo.%0A%0A*Nome:* ${nome}%0A*Email:* ${email}%0A*Telefone:* ${telefone}%0A*Mensagem:* ${mensagem}`;
+/* TOPO SEMITRANSPARENTE */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+}
 
-  const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
 
-  window.open(url, "_blank");
-});
+/* LOGO */
+.logo {
+  width: 260px;
+  max-width: 90%;
+  height: auto;
+}
+
+/* TEXTO EM MEIA-LUA */
+.arc-text {
+  width: 300px;
+  max-width: 90%;
+  height: 70px;
+  margin-top: -10px;
+}
+
+.arc-text text {
+  fill: var(--gold);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--whatsapp);
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 999;
+  text-decoration: none;
+}
+
+/* BANNER */
+.hero {
+  width: 100%;
+  margin-top: 180px; /* altura da logo + texto */
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* FORMULÁRIO */
+.form-section {
+  width: 100%;
+  max-width: 520px;
+  margin: -190px auto 40px;
+  background: rgba(0,0,0,0.88);
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 0 35px rgba(245,176,65,0.3);
+  text-align: center;
+}
+
+.form-section h2 {
+  color: var(--gold);
+  margin-bottom: 22px;
+  font-weight: 800;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 14px;
+  background: #222;
+  color: white;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: none;
+  height: 95px;
+}
+
+form button {
+  width: 100%;
+  padding: 16px;
+  background: var(--gold);
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+}
+
+/* VÍDEO */
+.video-section {
+  background: var(--gray);
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+.video-box {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* FOTOS */
+.photos-section {
+  background: var(--gray);
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.photos-section h2 {
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 28px 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .logo {
+    width: 200px;
+  }
+
+  .arc-text {
+    width: 240px;
+    height: 60px;
+  }
+
+  .hero {
+    margin-top: 160px;
+  }
+
+  .form-section {
+    margin-top: -160px;
+  }
+}
