@@ -31,31 +31,31 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 4px;
   padding-bottom: 0;
 }
 
 /* LOGO */
 .logo {
-  width: 260px;
+  width: 220px;
   max-width: 90%;
   height: auto;
 }
 
 /* TEXTO EM MEIA-LUA */
 .arc-text {
-  width: 300px;
-  max-width: 90%;
-  height: 70px;
-  margin-top: -10px;
+  width: 600px;
+  max-width: 95%;
+  height: 120px;
+  margin-top: -20px;
 }
 
 .arc-text text {
   fill: var(--gold);
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 54px; /* 3x maior */
   font-weight: 800;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 /* WHATSAPP */
@@ -79,7 +79,7 @@ body {
 /* BANNER */
 .hero {
   width: 100%;
-  margin-top: 180px; /* altura da logo + texto */
+  margin-top: 150px; /* altura da logo + texto */
 }
 
 .banner-img {
@@ -93,7 +93,7 @@ body {
 .form-section {
   width: 100%;
   max-width: 520px;
-  margin: -190px auto 40px;
+  margin: -180px auto 40px;
   background: rgba(0,0,0,0.88);
   padding: 28px;
   border-radius: 22px;
@@ -196,19 +196,23 @@ footer {
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .logo {
-    width: 200px;
+    width: 180px;
   }
 
   .arc-text {
-    width: 240px;
-    height: 60px;
+    width: 340px;
+    height: 90px;
+  }
+
+  .arc-text text {
+    font-size: 34px;
   }
 
   .hero {
-    margin-top: 160px;
+    margin-top: 140px;
   }
 
   .form-section {
-    margin-top: -160px;
+    margin-top: -150px;
   }
 }
