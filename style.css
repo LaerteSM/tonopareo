@@ -18,6 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+/* LAYOUT CENTRAL NO PC */
+.site-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 /* TOPO */
 .top-bar {
   position: fixed;
@@ -31,7 +37,7 @@ body {
 }
 
 .logo {
-  height: 110px;
+  height: 140px; /* LOGO MAIOR */
   max-width: 95%;
   object-fit: contain;
 }
@@ -57,7 +63,7 @@ body {
 /* BANNER */
 .hero {
   width: 100%;
-  margin-top: 110px;
+  margin-top: 140px; /* acompanha altura da logo */
   position: relative;
 }
 
@@ -71,11 +77,10 @@ body {
 /* TEXTO CURVO */
 .banner-text {
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 100%;
   pointer-events: none;
 }
 
@@ -92,12 +97,14 @@ body {
 .form-section {
   width: 100%;
   max-width: 520px;
-  margin: -160px auto 40px;
+  margin: -210px auto 40px; /* SOBE MAIS, COBRE O BANNER */
   background: rgba(0,0,0,0.88);
   padding: 28px;
   border-radius: 22px;
   box-shadow: 0 0 35px rgba(245,176,65,0.3);
   text-align: center;
+  position: relative;
+  z-index: 5;
 }
 
 .form-section h2 {
@@ -195,19 +202,19 @@ footer {
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .logo {
-    height: 85px;
+    height: 110px;
   }
 
   .hero {
-    margin-top: 85px;
+    margin-top: 110px;
   }
 
   .banner-text text {
-    font-size: 44px;
+    font-size: 46px;
     letter-spacing: 2px;
   }
 
   .form-section {
-    margin-top: -140px;
+    margin-top: -190px;
   }
 }
