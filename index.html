@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Passeio a Cavalo</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- LOGO FIXA NO TOPO -->
-  <img src="logo.png" alt="Logo" class="logo-fixed">
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
 
   <!-- BOTÃO WHATSAPP FLUTUANTE -->
   <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
@@ -20,48 +23,48 @@
 
   <!-- BANNER -->
   <header class="hero">
-    <div class="hero-overlay"></div>
-
-    <!-- FORMULÁRIO SOBRE O BANNER -->
-    <div class="form-container">
-      <h2>Faça seu cadastro</h2>
-
-      <form id="formulario">
-        <input type="text" id="nome" placeholder="Seu nome" required>
-        <input type="email" id="email" placeholder="Seu e-mail" required>
-        <input type="tel" id="telefone" placeholder="Seu telefone">
-        <textarea id="mensagem" placeholder="Mensagem"></textarea>
-        <button type="submit">Enviar pelo WhatsApp</button>
-      </form>
-    </div>
+    <img src="banner.jpg" alt="Banner" class="banner-img">
   </header>
 
-  <!-- VÍDEO -->
-  <section class="video-section">
-    <h2>Vídeo do passeio</h2>
-    <video controls poster="banner.jpg">
-      <source src="passeio.mp4" type="video/mp4">
-      Seu navegador não suporta vídeo.
-    </video>
+  <!-- FORMULÁRIO SOBRE O BANNER -->
+  <section class="form-section">
+    <h2>Faça seu cadastro</h2>
+
+    <form id="formulario">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input type="tel" id="telefone" placeholder="Seu telefone">
+      <textarea id="mensagem" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
   </section>
 
-  <!-- CARROSSEL DE FOTOS -->
-  <section class="gallery-section">
-    <h2>Fotos do passeio</h2>
-    <div class="carousel">
-      <button class="carousel-btn prev">&#10094;</button>
-      <div class="carousel-track">
-        <img src="banner.jpg" alt="Foto 1">
-        <img src="banner.jpg" alt="Foto 2">
-        <img src="banner.jpg" alt="Foto 3">
-        <img src="banner.jpg" alt="Foto 4">
-      </div>
-      <button class="carousel-btn next">&#10095;</button>
+  <!-- ÁREA DE VÍDEO -->
+  <section class="video-section">
+    <h2>Vídeo do passeio</h2>
+    <div class="video-box">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  </section>
+
+  <!-- ÁREA DE FOTOS -->
+  <section class="photos-section">
+    <h2>Galeria de Fotos</h2>
+    <div class="photos">
+      <img src="foto1.jpg" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+      <img src="foto4.jpg" alt="Foto 4">
+      <img src="foto5.jpg" alt="Foto 5">
+      <img src="foto6.jpg" alt="Foto 6">
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 – Passeio a Cavalo</p>
+    <p>&copy; 2026 • Passeio a cavalo</p>
   </footer>
 
   <script src="script.js"></script>
