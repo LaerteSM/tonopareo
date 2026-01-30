@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Passeio a Cavalo</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- LOGO + NOME NO TOPO -->
-  <div class="logo-container">
-    <div class="logo-content">
-      <h1 class="site-title">Passeio a cavalo</h1>
+  <!-- TOPO COM LOGO + TEXTO EM MEIA-LUA -->
+  <div class="top-bar">
+    <div class="top-content">
       <img src="logo.png" alt="Logo" class="logo">
+      <svg class="arc-text" viewBox="0 0 300 120">
+        <path id="curve" d="M 20 100 Q 150 10 280 100" fill="transparent" />
+        <text width="300">
+          <textPath href="#curve" startOffset="50%" text-anchor="middle">
+            PASSEIO A CAVALO
+          </textPath>
+        </text>
+      </svg>
     </div>
   </div>
 
