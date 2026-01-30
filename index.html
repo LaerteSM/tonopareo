@@ -1,3 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passeio a Cavalo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOPO COM LOGO + TEXTO EM MEIA-LUA -->
+  <div class="top-bar">
+    <div class="top-content">
+      <img src="logo.png" alt="Logo" class="logo">
+      <svg class="arc-text" viewBox="0 0 600 220">
+        <path id="curve" d="M 40 200 Q 300 20 560 200" fill="transparent" />
+        <text width="600">
+          <textPath href="#curve" startOffset="50%" text-anchor="middle">
+            PASSEIO A CAVALO
+          </textPath>
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- BOTÃO WHATSAPP -->
+  <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">💬</a>
+
+  <!-- BANNER -->
+  <header class="hero">
+    <img src="banner.jpg" alt="Banner" class="banner-img">
   </header>
 
   <!-- FORMULÁRIO -->
@@ -13,7 +46,7 @@
     </form>
   </section>
 
-  <!-- ÁREA DE VÍDEO -->
+  <!-- VÍDEO -->
   <section class="video-section">
     <h2>Vídeo do passeio</h2>
     <div class="video-box">
@@ -24,7 +57,7 @@
     </div>
   </section>
 
-  <!-- ÁREA DE FOTOS -->
+  <!-- FOTOS -->
   <section class="photos-section">
     <h2>Galeria de Fotos</h2>
     <div class="photos">
@@ -38,3 +71,9 @@
   </section>
 
   <footer>
+    <p>&copy; 2026 • Passeio a Cavalo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
