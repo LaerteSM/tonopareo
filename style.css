@@ -27,10 +27,11 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  height: 90px;
+  height: 110px;
   max-width: 95%;
   object-fit: contain;
 }
@@ -56,7 +57,7 @@ body {
 /* BANNER */
 .hero {
   width: 100%;
-  margin-top: 90px;
+  margin-top: 110px;
   position: relative;
 }
 
@@ -67,20 +68,24 @@ body {
   display: block;
 }
 
-/* TEXTO SOBRE O BANNER */
-.banner-title {
+/* TEXTO CURVO */
+.banner-text {
   position: absolute;
-  top: 28%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.banner-text text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 900;
   letter-spacing: 4px;
-  color: var(--gold);
+  fill: var(--gold);
   text-shadow: 0 0 12px rgba(0,0,0,0.8);
-  text-align: center;
-  white-space: nowrap;
 }
 
 /* FORMULÁRIO */
@@ -190,15 +195,15 @@ footer {
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .logo {
-    height: 75px;
+    height: 85px;
   }
 
   .hero {
-    margin-top: 75px;
+    margin-top: 85px;
   }
 
-  .banner-title {
-    font-size: 42px;
+  .banner-text text {
+    font-size: 44px;
     letter-spacing: 2px;
   }
 
