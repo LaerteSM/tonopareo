@@ -22,10 +22,15 @@
   <header class="hero">
     <img src="banner.jpg" alt="Banner" class="banner-img">
 
-    <!-- TEXTO SOBRE O BANNER -->
-    <div class="banner-title">
-      Passeio a Cavalo
-    </div>
+    <!-- TEXTO CURVO NO BANNER -->
+    <svg class="banner-text" viewBox="0 0 1000 300">
+      <path id="curve" d="M100,250 Q500,50 900,250" fill="transparent"/>
+      <text width="100%">
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+          Passeio a Cavalo
+        </textPath>
+      </text>
+    </svg>
   </header>
 
   <!-- FORMULÁRIO -->
